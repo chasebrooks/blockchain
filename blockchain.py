@@ -11,7 +11,7 @@ class Blockchain(object):
     def __init__(self):
         self.chain = []
         self.current_transactions = []
-        #self.nodes = set() #use a set instead of a list because new nodes are idempotent (can only be added once)
+        self.nodes = set() #use a set instead of a list because new nodes are idempotent (can only be added once)
 
         #create genesis block
         self.new_block(previous_hash=1, proof=100)
