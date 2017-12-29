@@ -71,10 +71,7 @@ def register_nodes():
         return "Error: Please supply a valid list of nodes", 400
 
     for node in nodes:
-        #blockchain.register_node(node)
-        print(node)
-
-
+        blockchain.register_node(node)
 
     response = {
         'message': 'New nodes have been added',
